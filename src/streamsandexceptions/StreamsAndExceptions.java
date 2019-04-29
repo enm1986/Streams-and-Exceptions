@@ -20,8 +20,8 @@ public class StreamsAndExceptions {
      * llama a métodos de lectura y escritura de ficheros según la opción
      * elegida.
      *
-     * @see streamsandexceptions.StreamsAndExceptions#pedirOpcion() 
-     * 
+     * @see streamsandexceptions.StreamsAndExceptions#pedirOpcion()
+     *
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -84,9 +84,10 @@ public class StreamsAndExceptions {
      * esperar que el usuario elija que tipo de operaciones de lectura-escritura
      * con objetos quiere hacer.
      *
-     * @see streamsandexceptions.StreamsAndExceptions#pedirOpcionObjetos() 
+     * @see streamsandexceptions.StreamsAndExceptions#pedirOpcionObjetos()
      *
-     * @throws FicheroEntradaException 
+     * @throws FicheroEntradaException Excepción lanzada cuando no encuentra el
+     * fichero de entrada
      */
     public static void tratamientoDeObjetos() throws FicheroEntradaException {
 
