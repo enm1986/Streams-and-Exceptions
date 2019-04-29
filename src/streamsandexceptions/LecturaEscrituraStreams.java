@@ -19,7 +19,7 @@ import java.util.Scanner;
 
 /**
  * En esta clase tenemos distintos métodos de lectura y escritura de ficheros
- * 
+ *
  * @author Eugenio Navarro
  */
 public final class LecturaEscrituraStreams {
@@ -72,8 +72,7 @@ public final class LecturaEscrituraStreams {
      * con un formato en particular</li>
      * </ol>
      *
-     * @throws FicheroEntradaException: Excepción que ocurre cuando no encuentra
-     * el fichero a leer.
+     * @throws FicheroEntradaException
      */
     public static void lecturaEscrituraBB() throws FicheroEntradaException {
         try (FileInputStream fin = new FileInputStream(pedirRuta("entrada"));
@@ -125,8 +124,7 @@ public final class LecturaEscrituraStreams {
      * salida con un formato en particular</li>
      * </ol>
      *
-     * @throws FicheroEntradaException: Excepción que ocurre cuando no encuentra
-     * el fichero a leer.
+     * @throws FicheroEntradaException
      */
     public static void lecturaEscrituraCC() throws FicheroEntradaException {
         try (FileReader lector = new FileReader(pedirRuta("entrada"));
@@ -179,8 +177,7 @@ public final class LecturaEscrituraStreams {
      * con un formato en particular</li>
      * </ol>
      *
-     * @throws FicheroEntradaException: Excepción que ocurre cuando no encuentra
-     * el fichero a leer.
+     * @throws FicheroEntradaException
      */
     public static void lecturaEscrituraBuffer() throws FicheroEntradaException {
         try (BufferedReader lectorBuffer = new BufferedReader(new FileReader(pedirRuta("entrada")));
@@ -247,8 +244,7 @@ public final class LecturaEscrituraStreams {
      * entrada</li>
      * </ol>
      *
-     * @throws FicheroEntradaException: Excepción que ocurre cuando no encuentra
-     * el fichero a leer.
+     * @throws FicheroEntradaException
      */
     public static void lecturaLL_escrituraO() throws FicheroEntradaException {
         try (BufferedReader lectorBuffer = new BufferedReader(new FileReader(pedirRuta("entrada")));
@@ -335,8 +331,7 @@ public final class LecturaEscrituraStreams {
      * entrada</li>
      * </ol>
      *
-     * @throws FicheroEntradaException: Excepción que ocurre cuando no encuentra
-     * el fichero a leer.
+     * @throws FicheroEntradaException
      */
     public static void lecturaO_escrituraO() throws FicheroEntradaException {
         try (ObjectInputStream objectEntrada = new ObjectInputStream(new FileInputStream(pedirRuta("entrada")));
@@ -370,8 +365,7 @@ public final class LecturaEscrituraStreams {
      * entrada</li>
      * </ol>
      *
-     * @throws FicheroEntradaException: Excepción que ocurre cuando no encuentra
-     * el fichero a leer.
+     * @throws FicheroEntradaException
      */
     public static void lecturaO_escrituraCons() throws FicheroEntradaException {
         try (ObjectInputStream objectEntrada = new ObjectInputStream(new FileInputStream(pedirRuta("entrada")))) {
@@ -406,7 +400,7 @@ public final class LecturaEscrituraStreams {
      * <li>Escribirá el objeto en el fichero de salida</li>
      * </ol>
      */
-    public static void lecturaCons_escrituraO() throws FicheroEntradaException {
+    public static void lecturaCons_escrituraO() {
         try (ObjectOutputStream objectSalida = new ObjectOutputStream(new FileOutputStream(pedirRuta("salida")))) {
             Pelicula p = new Pelicula(); //crea una nueva película  
             p.pedirPelicula();  //llenamos sus atributos pidiendolos por pantalla
